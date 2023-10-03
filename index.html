@@ -2,667 +2,207 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple=mobile-web-app-capable" content="yes">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
-  <link rel="stylesheet" href="css/style.css" type="text/css">
-  <link rel="icon" href="/portfolio/favicon.png">
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-  <title>라인컴퓨터아트학원</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <title>권유림 포트폴리오</title>
+  <!-- style sheet -->
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16">
+<!-- java script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
 </head>
 <body>
-  <header id="main_header"><!-- class="fixed" -->
+  <header>
     <div class="innerbox">
-      <h1><a href="index.html">라인아카데미</a></h1>
-      <button type="button" class="toggle mobile">
+      <h1 class="logo"><a href="index.html">Yurika's portfolio</a></h1> 
+      <button type="button" class="toggle">
         <span class="bar1"></span>
         <span class="bar2"></span>
         <span class="bar3"></span>
-        <span class="sr_only">전체메뉴</span>
+        <span class="sr_only">메뉴버튼</span>
       </button>
       <nav class="gnb">
-          <ul>
-            <li>
-              <a href="#">학원 소개</a>
-              <div class="sub">
-                <ul>
-                  <li><a href="#">인사이트</a></li>
-                  <li><a href="#">연혁</a></li>
-                  <li><a href="#">조직도</a></li>
-                  <li><a href="#">교습비 안내</a></li>
-                  <li><a href="#">오시는 길</a></li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a href="#">교육 과정</a>
-              <div class="sub">
-                <ul>
-                  <li><a href="#">웹 프론트엔드</a></li>
-                  <li><a href="#">UI/UX 디자인</a></li>
-                  <li><a href="#">빅데이터 분석 &middot; 개발</a></li>
-                  <li><a href="#">3D 인테리어 디자인</a></li>
-                  <li><a href="#">BIM 건축 설계</a></li>
-                  <li><a href="#">모션그래픽</a></li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a href="#">포트폴리오</a>
-              <div class="sub">
-                <ul>
-                  <li><a href="#">웹 & 앱 디자인</a></li>
-                  <li><a href="#">건축/인테리어</a></li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a href="#">커뮤니티</a>
-              <div class="sub">
-                <ul>
-                  <li><a href="#">공지사항</a></li>
-                  <li><a href="#">수강생 후기</a></li>
-                  <li><a href="#">취업자 인터뷰</a></li>
-                  <li><a href="#">이벤트</a></li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a href="#">취업 지원센터</a>
-              <div class="sub">
-                <ul>
-                  <li><a href="#">채용 정보</a></li>
-                  <li><a href="#">직무 기사</a></li>
-                  <li><a href="#">취업 현황</a></li>
-                  <li><a href="#">외부 행사</a></li>
-                  <li><a href="#">취업 가이드</a></li>
-                  <li><a href="#">취업 Q&A</a></li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a href="#">제도 안내</a>
-              <div class="sub">
-                <ul>
-                  <li><a href="#">국비지원</a></li>
-                  <li><a href="#">국민취업지원</a></li>
-                  <li><a href="#">고교위탁</a></li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a href="#">상담하기</a>
-              <div class="sub">
-                <ul>
-                  <li><a href="#">수강료 조회</a></li>
-                  <li><a href="#">시간표 조회</a></li>
-                  <li><a href="#">고객 건의사항</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-      </nav>
-      <nav class="snb desktop">
         <ul>
-          <li><a href="https://open.kakao.com/o/scQ13Sqb">카카오톡</a></li>
-          <li><a href="https://youtube.com/@linecomputer3586">유튜브</a></li>
-          <li><a href="https://www.instagram.com/linecomputerart/">인스타그램</a></li>
-          <li><a href="https://blog.naver.com/leez2">블로그</a></li>
+          <li><a href="#" class="toAbout">About Me</a></li>
+          <li><a href="#" class="toSkill">Skill</a></li>
+          <li><a href="#" class="toProject">Projects</a></li>
+          <li><a href="#" class="toContact">Contact</a></li>
         </ul>
       </nav>
     </div>
-    <div class="gnb_bg"></div>
   </header>
-  <section id="main_visual">
-    <div class="slider_wrap">
-      <div class="slider">
-        <div class="bg_wrap">
-          <div class="bg">
-            <img src="img/bg01.jpg" alt="">
-            <div class="textbox">
-              <span class="slogan">미래의 프론트엔드 양성 학원</span><span class="name">LINE COMPUTER ART</span>
-            </div>
-          </div>  
-          <div class="bg">
-            <img src="img/bg2.jpg" alt="">
-            <div class="textbox">
-              <span class="slogan">미래의 프로그래머 양성 학원</span><span class="name">LINE COMPUTER ART</span>
-            </div>
-          </div>
-          <div class="bg">
-            <img src="img/bg02.jpg" alt="">
-            <div class="textbox">
-              <span class="slogan">미래의 프로그래머 양성 학원</span><span class="name">LINE COMPUTER ART</span>
-            </div>
-            
-          </div>
+  <section class="intro">
+    <img class="target" src="img/introbg.png" alt="">
+    <div class="zoom">
+    </div>
+    <h2><span>Welcome</span><br><span>to My Web</span></h2>
+  </section>
+  <section class="aboutme">
+    <h2>ABOUT ME</h2>
+    <div class="content_box">
+      <dl>
+        <div>
+          <dt class="name">이름</dt>
+          <dd>권유림</dd>
         </div>
-      </div>
-      <div class="arrow_btns">
-        <button type="button" class="btn_prev">prev</button>
-        <button type="button" class="btn_next">next</button>
-      </div>
-      <!-- <div class="textbox">
-        <span class="slogan">미래의 프로그래머 양성 학원</span><span class="name">LINE COMPUTER ART</span>
-      </div> -->
+        <div>
+          <dt>생년월일</dt>
+          <dd>1999.05.26</dd>
+        </div>
+        <div>
+          <dt class="email">이메일</dt>
+          <dd>urim227@gmail.com</dd>
+        </div>
+        <div>
+          <dt>카카오톡</dt>
+          <dd>yurica18</dd>
+        </div>
+      </dl>
+      <div class="profile_ani"><img src="img/typing1.png" alt=""></div>
+      <p> 
+        <strong>디자이너에서 개발자로 도약하는 Web Loper 권유림입니다.</strong>
+        대학교에서 디자인을 전공하고, 웹디벨로퍼의 길을 걷게 되었습니다.
+        웹이라는 하나의 세상을 그려내고 설계하고  구현시킬 때마다 짜릿합니다. 스스로의 성장을 위해 앞으로 계속 정진하겠습니다!
+      </p>
     </div>
     
   </section>
-  
-  <section id="introduce">
-    <div class="headbox">
-      <h2>학원 소개</h2>
-      <p>라인컴퓨터아트학원은 <span class="point_txt">프로젝트 / 포트폴리오 중심의 훈련</span>으로 실무에 투입되어도 손색없는 인재를 양성합니다.</p>
+  <div class="scroll">
+    <div class="spider">
+      <span class="string"></span>
+      <img src="img/Downspider.png" alt="">
     </div>
+  </div>
+  <section class="skill">
+    <h2>SKILLS</h2>
     <ul>
-      <li>
-        <h3>체계적인 커리큘럼 구성</h3>
-        <p>국가직무능력표준(NCS)을 토대로 기초지식부터 실무 능력까지 습득 할 수 있도록 체계적인 훈련과정을 편성했습니다.
-        </p>
-      </li>
-      <li>
-        <h3>훈련과정의 전문성</h3>
-        <p>‘실무’와 ‘강의’ 경력을 모두 갖춘 실무 경력 10년 이상의 전문가들을 전임강사로 배치했습니다.
-        </p>
-      </li>
-      <li>
-        <h3>완벽한 취업 정보제공
-        </h3>
-        <p>전문 직업 상담사의 1:1맞춤 상담 등 취업지원팀을 통해 취업 준비와 실무 환경에 한층 더 가까워집니다.
-        </p>
-      </li>
-      <li>
-        <h3>최신 트렌드 교육
-        </h3>
-        <p>해당 직무에서 오래전부터 사용한 기본 기술부터 실제 현업에서 사용되는 최신 기술을 반영하여 교육합니다.
-        </p>
-      </li>
+      <li><img src="./img/skill01.png" alt="html"></li>
+      <li><img src="./img/skill02.png" alt="css"></li>
+      <li><img src="./img/skill03.png" alt="java Script"></li>
+      <li><img src="./img/skill04.png" alt="react"></li>
+      <li><img src="./img/skill05.png" alt="photoshop"></li>
+      <li><img src="./img/skill06.png" alt="illustration"></li>
+      <li><img src="./img/skill07.png" alt="figma"></li>
+      <!-- <li><img src="./img/skill08.png" alt="clipstudio"></li> -->
     </ul>
   </section>
-  
-  <section id="curriculum">
-    <div class="headbox">
-      <h2>교육 과정</h2>
-      <p>라인컴퓨터아트의 <span class="point_txt">다양하고 실용적인 강의</span>를 접해보세요!</p>
-    </div>
-    <div class="curri_slider">
-      <div class="curri_box frontend">
-        <a href="#">
-          <span class="textbox">
-            <strong><span>Web Frontend</span><br>웹 프론트엔드</strong>
-            <span>웹퍼블리셔 기초부터 프론트엔드의 트렌디한 기술까지!</span>
-            <span class="tag">#HTML #CSS  #JavaScript #REACT #Node.js #웹퍼블리셔 #프론트엔드 개발 #UI/UX 디자인</span>
-          </span>
-        </a>
-      </div>
-      <div class="curri_box uiux">
-        <a href="#">
-          <span class="textbox">
-            <strong><span>UI/UX Design</span><br>UI/UX 디자인</strong>
-            <span>웹 콘텐츠의 기획 /분석 디자인과 프론트엔드 개발을 동시에!</span>
-            <span class="tag">#HTML #CSS #미디어쿼리 #JavaScript #Cross Browsing #웹퍼블리셔 #웹디자인 #UI/UX 디자인</span>
-          </span>
-        </a>
-      </div>
-      <div class="curri_box bigdata">
-        <a href="#">
-          <span class="textbox">
-            <strong><span>Big Data</span><br>빅데이터</strong>
-            <span>머신러닝과 딥러닝 교육을 통한 빅데이터 분석!</span>
-            <span class="tag">#딥러닝 #머신러닝 #파이썬 #빅데이터 분석기사 #빅데이터 플랫폼 엔지니어 </span>
+  <section class="portfolio">
+    <h2>PORTFOLIO</h2>
+      <ul class="content_box">
+        
+        <li>
+          <div class="text_wrap">
+            <h3>
+              <span class="category">리뉴얼</span>
+              라인컴퓨터아트 메인페이지 디자인
+            </h3>
+            <div class="project_thum"><img src="img/portfolio_02.png" alt="라인컴퓨터아트학원 리뉴얼 홈페이지 썸네일"></div>
+            <p>라인 컴퓨터 아트 학원 메인페이지를 리뉴얼한 반응형 페이지입니다.
+              <span>흰색과 오렌지를 메인 컬러로 설정</span>하여 인재 양성에 걸맞는 열정적인 이미지를 보여줬고, 비주얼적 개선을 통해 방문자들에게 <span>신뢰감</span>을 줄 수 있도록 디자인했습니다.</p>
             
-          </span>
-        </a>
-      </div>
-      <div class="curri_box interior">
-        <a href="#">
-          <span class="textbox">
-            <strong><span>3D Interior Design</span><br>3D 인테리어 디자인</strong>
-            <span>사람, 환경, 디자인, 생활, 문화까지 고려한 인테리어 디자인!</span>
-            <span class="tag">#건축설계 #실내인테리어 #구조설계 #인테리어 디자이너</span>
-          </span>
-        </a>
-      </div>
-      <div class="curri_box bim">
-        <a href="#">
-          <span class="textbox">
-            <strong><span>BIM Contruct</span><br>BIM 건축설계</strong>
-            <span>BIM을 운용한 실내건축설계 시각화!</span>
-            <span class="tag">#Revit #스케치업 #CAD #3D맥스 #건축디자인 #건축설계 #건축설비회사  </span>
-          </span>
-        </a>
-      </div>
-      <div class="curri_box motion">
-        <a href="#">
-          <span class="textbox">
-            <strong><span>Motion Graphic</span><br>모션그래픽</strong>
-            <span>모션에 힘과 에너지, 섬세한 감성을 담아낸 매력적인 영상 제작.
-            </span>
-            <span class="tag">#애프터이펙트 #프리미어프로 #모션그래픽 #영상CG #영상편집디자인 #CG제작자 #모션그래퍼</span>
-          </span>
-        </a>
-      </div>
-    </div>
-  </section>
-  
-  <section id="portfolio">
-    <div class="headbox">
-      <h2>포트폴리오</h2>
-      <p>라인컴퓨터아트 학원 <span class="point_txt">수강생들의 고퀄리티 작품들</span cla>을 만나보세요!</p>
-      <!-- <p class="desktop">* 각 칸 위에 마우스를 올리세요!</p> -->
-    </div>
-
-    <div class="list desktop">
-      <ul >
-        <li>
-          <a href="https://guswjd8694.github.io/dothome2021/portfolio/" target="_blank">옷입히기<span>UXUI / web publisher</span></a>
-          <div class="thumnail"><img src="img/fort_dressup.jpg" alt=""></div>
+          </div>
+          <dl>
+              <div class="contribution">
+                <dt>담당</dt>
+                <dd>웹디자인, 웹페이지 코딩</dd>
+              </div>
+              <div class="period">
+                <dt>소요 기간</dt>
+                <dd>약 2달</dd>
+              </div>
+              <div class="device">
+                <dt>사용기기</dt>
+                <dd>PC, 태블릿, 스마트폰</dd>
+              </div>
+            </dl>
+            <div class="direct_btns">
+              <!-- <a href="" class="to_plan" target="_blank">피그마</a> -->
+              <a href="http://yurika.dothome.co.kr/line_renewer" class="to_page" target="_blank">보러가기</a>
+            </div>
         </li>
-        <li>
-          <a href="http://kkms4001.iptime.org/~c14st04/portfolio/PHANTOM_OF_THE_OPERA/" target="_blank">오페라의 유령<span>UXUI / web publisher</span></a>
-          <div class="thumnail"><img src="img/fort_opera.jpg" alt=""></div>
+        <li class="project">
+          <div class="text_wrap">
+            <h3>
+              <span class="category">클론코딩</span>
+              알툴즈 메인페이지 클론코딩
+            </h3>
+            <div class="project_thum"><img src="img/portfolio_01.png" alt="알툴즈 홈페이지 클론코딩 썸네일"></div>
+            <p>알툴즈 메인페이지 클론코딩입니다. 컨트롤러 아이콘을 다른 이미지로 교체하거나 위치를 바꾸는 등 <span>플러그인을 커스터마이징</span>하여 다양한 미디어쿼리로 창 크기가 변할 때마다 레이아웃이 달라지는 반응형 웹페이지를 구현했습니다.</p>
+            
+          </div>
+          <dl>
+              <div class="contribution">
+                <dt>담당</dt>
+                <dd>웹페이지 코딩</dd>
+              </div>
+              <div class="period">
+                <dt>소요 기간</dt>
+                <dd>약 1달</dd>
+              </div>
+              <div class="device">
+                <dt>사용기기</dt>
+                <dd>PC, 태블릿, 스마트폰</dd>
+              </div>
+            </dl>
+            <div class="direct_btns">
+              <!-- <a href="" class="to_plan" target="_blank">피그마</a> -->
+              <a href="http://yurika.dothome.co.kr/altoolClone/" class="to_page" target="_blank">보러가기</a>
+            </div>
         </li>
-        <li>
-          <a href="http://linecomputerart.com/assets/mp4/JungCW.mp4" target="_blank">도담도담<span>건축 / 인테리어</span></a>
-          <div class="thumnail"><img src="img/fort_dodam.jpg" alt=""></div>
-        </li>
-        <li>
-          <a href="https://www.panopdm.com/viewer.php?application=panorama&id=a9e42f7aab57d833bdc54fe79685f7b627eb73bd" target="_blank">Friday Cafe<span>건축 / 인테리어</span></a>
-          <div class="thumnail"><img src="img/fort_fricafe.jpg" alt=""></div>
-        </li>
-        <li>
-          <a href="http://kkms4001.iptime.org/~fact119/c8/st22/test/theliter/main.php" target="_blank">THE LITER<span>UXUI / Web publisher</span></a>
-          <div class="thumnail"><img src="img/fort_theliter.jpg" alt=""></div>
-        </li>
-        <li>
-          <a href="http://linecomputerart.com/assets/mp4/HerDR.mp4" target="_blank">My House<span>건축 / 인테리어</span></a>
-          <div class="thumnail"><img src="img/fort_myhouse.jpg" alt=""></div>
-        </li>
-        <li>
-          <a href="http://kkms4001.iptime.org/~fact119/c8/st18/portfolio/maserati/" target="_blank">MASERATI<span>UXUI / WEB PUBLISHER
-        </span></a>
-        <div class="thumnail"><img src="img/fort_maserati.jpg" alt=""></div>
-      </li>
-        <li>
-          <a href="https://panopdm.com/viewer.php?application=panorama&id=f5d955805b91ea8af39447f093b2ab11ede8bb0c" target="_blank">Rectanglass
-          <span>건축 / 인테리어</span></a>
-          <div class="thumnail"><img src="img/fort_Rectanglass.jpg" alt=""></div>
-        </li>
+        <li> 
+          <div class="text_wrap">
+            <h3>
+              <span class="category">개인 웹사이트</span>
+              사라의 꿈 캐릭터 디자인 프로젝트
+            </h3>
+            <div class="project_thum"><img src="img/portfolio_03.png" alt="사라의꿈 프로젝트 소개 사이트 썸네일"></div>
+            <p>개인 창작 캐릭터 프로젝트를 소개하는 웹사이트입니다. 스토리와 세계관 설명, 등장인물 소개, 직접 디자인한 캐릭터의 설정화와 일러스트 등으로 구성되었습니다. <span>노랑과 자주색 컬러로 발랄하면서도 신비로운 이미지</span>를 주고, 캐릭터를 돋보일 있는 <span>간단한 텍스트 등장과 무한 애니메이션</span>을 통해 동적인 이미지를 주었습니다. </p>
+            
+            </div>
+            <dl>
+              <div class="contribution">
+                <dt>담당</dt>
+                <dd>캐릭터 디자인, 일러스트 제작, 웹페이지 코딩</dd>
+              </div>
+              <div class="period">
+                <dt>소요 기간</dt>
+                <dd>약 3주</dd>
+              </div>
+              <div class="device">
+                <dt>사용기기</dt>
+                <dd>PC</dd>
+              </div>
+            </dl>
+            <div class="direct_btns">
+              <!-- <a href="https://www.figma.com/file/X9Co6Us7M8ec6Qj7BrGxHK/dream-of-sara?type=design&node-id=71%3A2705&mode=design&t=YUS7lyXlAXTaF6JA-1" class="to_plan" target="_blank">피그마</a> -->
+              <a href="http://yurika.dothome.co.kr/dreamOfSara/" class="to_page" target="_blank">보러가기</a>
+            </div>
+          </li>
+          
       </ul>
-      <a href="#" class="more"><span>더보기</span></a>
-    </div>
-    <div class="btn_wrap mobile">
-      <a href="#" class="web">
-        웹 &amp; 앱  퍼블리셔
-        <span class="voir">자세히 보기</span>
-      </a>
-      <a href="#" class="interior">
-        건축 &amp; 인테리어
-        <span class="voir">자세히 보기</span></a>
-        <!-- <div class="bg"><img src="img/port_bg.png" alt=""></div> -->
-    </div>
   </section>
-    
-  <section id="company">
-    <div class="headbox">
-      <h2>취업처</h2>
-      <p>라인 컴퓨터 학원의 수업을 이수하면서 <span class="point_txt">다양한 회사들</span>을 접해보세요!</p>
-    </div>
-    <div class="belt_wrap">
-      <div class="belt bt1">
-        <div class="company1"></div>
-        <div class="company2"></div>
-        <div class="company3"></div>
-        <div class="company4"></div>
-        <div class="company5"></div>
-        <div class="company6"></div>
-        <div class="company7"></div>
-        <div class="company8"></div>
-        <div class="company9"></div>
-        <div class="company10"></div>
-        <div class="company1"></div>
-        <div class="company2"></div>
-        <div class="company3"></div>
-        <div class="company4"></div>
-        <div class="company5"></div>
-        <div class="company6"></div>
-        <div class="company7"></div>
-        <div class="company8"></div>
-        <div class="company9"></div>
-        <div class="company10"></div>
-      </div>
-      <div class="belt bt2">
-        <div class="company11"></div>
-        <div class="company12"></div>
-        <div class="company13"></div>
-        <div class="company14"></div>
-        <div class="company15"></div>
-        <div class="company16"></div>
-        <div class="company17"></div>
-        <div class="company18"></div>
-        <div class="company19"></div>
-        <div class="company20"></div>
-        <div class="company11"></div>
-        <div class="company12"></div>
-        <div class="company13"></div>
-        <div class="company14"></div>
-        <div class="company15"></div>
-        <div class="company16"></div>
-        <div class="company17"></div>
-        <div class="company18"></div>
-        <div class="company19"></div>
-        <div class="company20"></div>
-      </div>
-    </div>
-  </section>
-  
-  <section id="interview">
-    <div class="headbox">
-      <h2>수강생 후기</h2>
-      <p>라인 학생들의 <span class="point_txt">만족스러운 후기</span>를 들려드립니다.</p>
-    </div>
-    <div class="ivs_wrap">
-      <div class="ivbox1">
-        <div class="drawphoto"><img src="img/interview1.png" alt=""></div>
-        <div class="commentbox">
-          <div class="boxhead">
-            <strong>김서아 학생</strong>
-            <span>UXUI 디자인</span>
-          </div>
-          <div class="revtext">
-            처음 듣고 해보는 것이라 걱정을 많이 했습니다. 수업을 들어보니 비전공자들도 알기 쉽도록 설명해 주셨고, 연습시간도 충분해서 학습에 집중할 수 있었습니다. 열심히 하는 반 분위기에 최선을 다하게 되었습니다. 힘들 때마다 선생님과의 상담을 할 수 있었습니다. 수업을 마칠 때 쯤 취업이 마법처럼 되어버렸습니다.
-          </div>
-        </div>
-      </div>
-      <div class="ivbox2">
-        <div class="drawphoto"><img src="img/interview2.png" alt=""></div>
-        
-        <div class="commentbox">
-          <div class="boxhead">
-            <strong>김현정 학생</strong>
-            <span>UXUI 디자인</span>
-          </div>
-          <div class="revtext">
-            겉만 배우는 것이 아닌 진짜 알맹이를 배울 수 있는 교육이었습니다. 매우매우 만족하고 원하는 회사에 취업까지 할 수 있게 되었습니다. <br>특히 선생님이 아시는 부분이 많아서 배울 수 있는 언어도 많았고, 교육 환경도 좋았습니다. 덕분에 포트폴리오도 완벽하게 마무리되어 성공적인 취업을 하였습니다.
-          </div>
-        </div>
-      </div>
-      <div class="ivbox3">
-        <div class="drawphoto"><img src="img/interview3.png" alt=""></div>
-        
-        <div class="commentbox">
-          <div class="boxhead">
-            <strong>김관중 학생</strong>
-            <span>UXUI 디자인</span>
-          </div>
-          <div class="revtext">
-            실무적인 경력이 뛰어나신 선생님이라 전문적인 것들을 많이 배울 수 있어 좋았습니다! 문과-어문계열의 학생으로 아무것도 모르는 상태로 돌아왔는데 끝날 때는 정말 실무에 필요한 것들을 매우 많이 배우고 가는 것 같아 정말 후회되지 않는 최고의 수업이었습니다.
-          </div>
-        </div>
-      </div>
-      <div class="ivbox4">
-        <div class="drawphoto"><img src="img/interview4.png" alt=""></div>
-        
-        <div class="commentbox">
-          <div class="boxhead">
-            <strong>김하늘 학생</strong>
-            <span>UXUI 디자인</span>
-          </div>
-          <div class="revtext">
-            많은 노력을 했고, 매우 보란 찬 시간이었습니다. 특히, 포트폴리오 작업 시 취업을 염두에 둔 다양한 생각을 실제로 구현하여 원하는 내용을 만드는 작업이 매우 보람차게 느껴졌습니다. 또한, 여러 차례의 팀 작업은 실무에서 협업을 위한 기본 역량을 기를 수 있는 좋은 밑바탕이 되었으며, 어려움이 있을 때마다 상담을 통해 두려움을 극복할 수 있었습니다.
-          </div>
-        </div>
-      </div>
-      <!-- <div class="ivbox5">
-        <div class="drawphoto"><img src="img/interview5.png" alt=""></div>
-        
-        <div class="commentbox">
-          <div class="boxhead">
-            <strong>윤희수 학생</strong>
-            <span>UXUI 디자인</span>
-          </div>
-          <div class="revtext">
-            수업 시간 이외에는 더 배우고 싶은 사람을 위한 보충이 이루어졌는데, 웹 개발에 대한 전반적인 지식과 실무에 필요한 지식을 가르쳐 주셔서 정말 많은 지식을 쌓을 수 있었습니다. <br>또 포트폴리오를 만들 때, 한명 씩 꼼꼼히 봐주시면서 진행방향에 대해 얘기해주시고, 피드백을 해주셔서 정말 많은 도움이 되었습니다.
-          </div>
-        </div>
-      </div>
-      <div class="ivbox6">
-        <div class="drawphoto"><img src="img/interview6.png" alt=""></div>
-        
-        <div class="commentbox">
-          <div class="boxhead">
-            <strong>박가현 학생</strong>
-            <span>UXUI 디자인</span>
-          </div>
-          <div class="revtext">
-            긴 시간을 투자해야 했기에 처음에 망설여졌으나, 수강을 마친 지금은 수업에 너무너무 만족하고 후회 없습니다. 선생님께서 열의와 정성으로 학생들을 가르치고 이끌어주셔서 기대한 것보다 더 많은 것을 배워가게 되었습니다. 오히려 짧지 않은 시간인데도 짧게 느껴지고 아쉬움으로만 남습니다.
-          </div>
-        </div>
-      </div>
-      <div class="ivbox7">
-        <div class="drawphoto"><img src="img/interview7.png" alt=""></div>
-        <div class="commentbox">
-          <div class="boxhead">
-            <strong>이수경 학생</strong>
-            <span>UXUI 디자인</span>
-          </div>
-          <div class="revtext">
-            UI/UX 디자인 개발 양성 과정으로 제가 할 수 없었던 HTML5, CSS3, Java script를 사용할 수 있게 되었고, 저를 한층 더 발전시킬 기회를 갖게 되었습니다. 항상 학생들이 집에 가기 전까지 남아서 학생들의 부족한 수업 내용을 보강해주셨고, 모르는 내용도 질문하면 친절하게 처음부터 하나씩 알려주셨습니다.
-        </div>
-        </div>
-      </div>
-      <div class="ivbox8">
-        <div class="drawphoto"><img src="img/interview8.png" alt=""></div>
-        <div class="commentbox">
-          <div class="boxhead">
-            <strong>신지은 학생</strong>
-            <span>UXUI 디자인</span>
-          </div>
-          <div class="revtext">
-            이 수업을 듣기 전에는 코딩이라는 것이 무엇인지도 몰랐습니다. 하지만 선생님 덕분에 코딩을 잘 배울 수 있었고 취업도 했습니다. 제가 만나본 선생님들 중 가장 학생들에게 열정을 가지고 가르치는 선생님이십니다. 덕분에 포트폴리오도 훌륭하게 완성할 수 있게 되어 취업에도 도움이 많이 되었습니다.
-          </div>
-        </div>
-      </div>
-      <div class="ivbox9">
-        <div class="drawphoto"><img src="img/interview9.png" alt=""></div>
-        <div class="commentbox">
-          <div class="boxhead">
-            <strong>서영윤 학생</strong>
-            <span>UXUI 디자인</span>
-          </div>
-          <div class="revtext">
-            노력은 배신하지 않는다고 생각합니다. 처음부터 끝까지 기본을 다지고 수업시간에 던져지는 수많은 문제를 해결하면서, 처음에는 힘들었지만 어느 순간 문제를 해결하며 더 많은 것을 갈망하는 자신을 볼 수 있었습니다. 처음부터 끝나는 그 순간까지 매우 알찬 수업이었고, 특히 학원에 감사하게 생각합니다.
-          </div>
-        </div>
-      </div>
-      <div class="ivbox10">
-        <div class="drawphoto"><img src="img/interview10.png" alt=""></div>
-        <div class="commentbox">
-          <div class="boxhead">
-            <strong>이동은 학생</strong>
-            <span>UXUI 디자인</span>
-          </div>
-          <div class="revtext">
-            NCS과정대로 배우며 1대1로 상담도 자주 해주시고 내 제자라는 느낌을 받았습니다. 수업이 끝나고 난 뒤 학생이 1명이라도 남아있으면 선생님도 퇴근하시지 않고 남아서 기다려주셨습니다. 과정동안 항상 열심히 가르쳐주시는 선생님의 모습에 덩달아 저도 더 열심히 한 것 같네요.
-          </div>
-        </div>
-      </div> -->
-    </div>
-    <a href="#" class="more"><span>더보기</span></a>
-    <!-- <div class="commentbox"><p>겉만 배우는 것이 아닌 진짜 알맹이를 배울 수 있는 교육이었습니다. 매우매우 만족하고 원하는 회사에 취업까지 할 수 있게 되었습니다. 특히 선생님이 아시는 부분이 많아서 배울 수 있는 언어도 많았고, 교육 환경도 좋았습니다. 덕분에 포트폴리오도 완벽하게 마무리되어 성공적인 취업을 하였습니다.</p></div> -->
-  </section>
-  <section id="support">
-    <div class="headbox">
-      <h2>취업 지원</h2>
-      <p>라인은 여러분들의 <span class="point_txt">취업을 응원합니다.</span></p>
-    </div>
-    <div class="wrap">
-      <div class="lecture">
-        <span class="icon"></span>
-        <div class="textbox">
-          <h3>취업특강</h3>
-          <p>입사지원서 작성 및 면접 태도 등 취업에 관한 정보 제공을 통해 취업역량 향상을 위한 특강 제공.
-          </p>
-        </div>
-      </div>
-      <div class="consulting">
-        <span class="icon"></span>
-        <div class="textbox">
-          <h3>1:1 취업 컨설팅</h3>
-          <p>개인별 맞춤 상담으로 취업에 관한 전반적인 대비 및 노하우, 정보 제공
-          </p>
-        </div>
-      </div>
-      <div class="prepare">
-        <span class="icon"></span>
-        <div class="textbox">
-          <h3>이력서 첨삭</h3>
-          <p>상담 내용을 바탕으로 개인 맞춤 이력서 첨삭 및 면접 대비
-          </p>
-        </div>
-      </div>
-      <div class="management">
-        <span class="icon"></span>
-        <div class="textbox">
-          <h3>미취업자 관리</h3>
-          <p>수업이 끝난 이후에도 이력서 첨삭과 면접 피드백으로 지속적 컨설팅 진행
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <section id="contact">
-    <div class="headbox">
-      <h2>상담신청</h2>
-    </div>
-    <form action="#" method="post">
-      <div class="group1">
-        <select name="lecture" id="lecture" required>
-          <option value="">웹 프론트엔드</option>
-          <option value="">UI/UX 디자인</option>
-          <option value="">빅데이터 분석 &middot; 개발</option>
-          <option value="">3D 인테리어 디자인</option>
-          <option value="">BIM 건축설계</option>
-          <option value="">모션그래픽</option>
-          <option value="" selected>신청 강의</option>
-        </select>
-        <select name="reason" id="reason" required>
-          <option value="">수강료</option>
-          <option value="">시간표</option>
-          <option value="" selected>상담 사유</option>
-        </select>
-      </div>
-      <div class="group2">
-        <input type="text" id="name" name="name" placeholder="이름" required>
-        <input type="text" name="tel" id="tel" placeholder="번호" required>
-        <input type="email" name="email" id="email" placeholder="이메일" required>
-      </div>
-      <div class="inquiry_box">
-        <textarea class="inquiry" name="inquiry" placeholder="궁금하신 내용을 적어주세요."></textarea>
-      </div>
-      <div class="group3">
-        <label>
-        <input type="radio" id="telcon" name="consul" required><span>전화상담</span></label>
-        <label>
-        <input type="radio" id="talkcon" name="consul" required><span>카톡상담</span></label>
-        <label>
-        <input type="radio" id="visit" name="consul" required><span>방문상담</span></label>
-      </div>
-      
-      <div class="sumbtn">
-        <button type="submit" id="submit">신청하기</button>
-      </div>
-    </form>
-  </section>
-  
-  <footer id="main_footer">
-    <div class="footer_top">
-      <div class="info1">
-        <div class="footer_logo"></div>
-        <ul>
-          <li><a href="">카카오톡</a></li>
-          <li><a href="">유튜브</a></li>
-          <li><a href="">인스타그램</a></li>
-          <li><a href="">블로그</a></li>
+  <section class="contact">
+    <h2>CONTACT</h2>
+    <div class="content_box">
+      <img src="img/contact02.png" alt="">
+      <div class="contact_box">
+        <p>
+          함께 일할 퍼블리셔를 찾고 계신가요?<br>
+          제게 흥미가 생기셨다면 아래의 sns를 통해 연락해주세요. 3일 이내로 회신해드려요.<br>
+          그 외 궁금하신 점이 있으시다면 언제든지 연락주세요.<br>
+        </p>
+        <ul class="snb">
+          <li><a href="" class="kakao">카카오톡</a></li>
+          <li><a href="" class="instar">인스타</a></li>
+          <li><a href="" class="blog">네이버블로그</a></li>
         </ul>
-        <div class="address_wrap">
-          <p>031&#41; 365 5008</p>
-          <p>Lineacademy@Naver.com</p>
-          <address>
-            경기도 안산시 단원구 <br>
-            고잔동 535-2  코스모플라자 6층
-          </address>
-        </div>
-      </div>
-      <div class="info2">
-        <div class="fnb">
-          <h3>기타 사항</h3>
-          <ul>
-            <li><a href="#">개인정보처리방침</a></li>
-            <li><a href="#">학원 소개</a></li>
-            <li><a href="#">고객 상담센터</a></li>
-            <li><a href="#">학원 위치안내</a></li>
-            <li><a href="#">학원 Q&A</a></li>
-          </ul>
-        </div>
-        <div class="family">
-          <h3>관련 사이트</h3>
-          <ul>
-            <li><a href="#">HRD - Net</a></li>
-            <li><a href="#">한국산업협력공단</a></li>
-            <li><a href="#">워크넷</a></li>
-            <li><a href="#">국가직무능력표준</a></li>
-            <li><a href="#">직업능력심사평가원</a></li>
-          </ul>
-        </div>
       </div>
     </div>
-    <div class="footer_bot">
-      <p>&copy; Copyright LINE COMPUTER ART ACADEMY. All Rights Reserved. <span>학원운영등록번호 제4339호</span></p>
-    </div>
+  </section>
+  <footer>
+    <address>&copy; 2023. Kown yurim. all rights reserved.</address>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.1/dist/gsap.min.js"></script>
-  <script src="js/script.js" type="text/ecmascript"></script>
-  <script>
-    $(function(){
-      $('.curri_slider').slick({
-        dots:true,
-        arrows:true,
-        slidesToShow: 1,
-        centerPadding: '60px',
-        responsive: [
-          {
-            breakpoint: 2300,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              dots: true,
-              centerPadding:'50px'
-            }
-          },
-          {
-            breakpoint: 1200,
-            settings: {
-              slidesToShow: 2,
-              centerPadding:'50px'
-            }
-          },
-          {
-            breakpoint: 767,// 반응형 ~ 600
-            settings: {
-              slidesToShow: 1,
-            }
-          }
-        ]
-      });
-    });
-  </script>
+  <script src="javascript/script.js" type="text/javascript"></script>
 </body>
 </html>
