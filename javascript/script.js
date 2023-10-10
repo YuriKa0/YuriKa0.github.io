@@ -19,12 +19,38 @@ let zoomHalf = zoom.clientWidth / 2;
 
 
 // 스크롤 애니 변수
-let spider = document.querySelector('.spider');
-let spiderTop = spider.getBoundingClientRect().top;
 let projects = document.querySelectorAll('.portfolio li');
-let num = -460;
 
+// let spider = document.querySelector('.spider');
+// let spiderTop = spider.getBoundingClientRect().top;
+// let num = -460;
+// $('.spider').css({
+//   'top' : '5000px'
+// },300);
 
+window.addEventListener('scroll',()=>{
+  console.log(window.scrollY);
+  if(window.scrollY >= 1600 && window.scrollY <= 3270){
+    $('.spider').css({
+      'position' : 'fixed',
+      'top': '-570px'
+    });
+    $('.spider').addClass('on');
+  }else if(window.scrollY > 3255){
+    $('.spider').removeClass('on');
+    $('.spider').css({
+      'position' : 'absolute',
+      'top': '1400px',
+      // 'bottom':'0px'
+    });
+  }else{
+    $('.spider').removeClass('on');
+    $('.spider').css({
+      'position' : 'absolute',
+      'top': '-460px'
+    });
+  }
+});
 // 메뉴버튼 이벤트
 toggle.addEventListener('click',(e)=>{
   if(!toggleState){
@@ -62,7 +88,6 @@ toBtns.forEach((toBtn)=>{
     toggleState=0;
   }); 
 });
-
 
 
 //인트로 줌 이벤트
