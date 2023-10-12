@@ -223,11 +223,11 @@ header .gnb .toProject:hover::after, header .gnb .toContact:hover::after{
 
 /* scroll */
 @keyframes rotate{
-  0%{rotate:0deg; }
-  25%{rotate:-2deg; }
-  50%{rotate:0deg;}
-  75%{rotate:2deg;}
-  100%{rotate:0deg; top:-50px; }
+  0%{transform:rotate(0deg); }
+  25%{transform:rotate(-2deg); }
+  50%{transform:rotate(0deg);}
+  75%{transform:rotate(2deg);}
+  100%{transform:rotate(0deg); top:-50px; }
 }
 @keyframes spidermove{
   0%{ top : -570px; }
@@ -285,7 +285,7 @@ header .gnb .toProject:hover::after, header .gnb .toContact:hover::after{
   transition:0.3s;
 }
 .skill li:hover img{
-  transform:scale(110%);
+  transform:scale(1.1);
 }
 /* 스킬 끝*/
 
@@ -539,7 +539,7 @@ footer address{
     background-image:url('../img/web01.png'), url('../img/web02.png');
     background-repeat: no-repeat;
     background-position:left top, right bottom;
-    rotate:0deg; opacity:0; scale:0.8;
+    transform:rotate(0deg) scale(0.8); opacity:0; ;
     transition:rotate .3s , opacity .3s, scale .3s ;
   }
   .portfolio .project_thum.absol{
@@ -558,8 +558,8 @@ footer address{
   }
   .portfolio li:hover .project_thum{
     left:0; top:0;
-    rotate:5deg;
-    opacity:1; scale:1;
+    transform:rotate(5deg) scale(1);
+    opacity:1;
   }
   .portfolio p{
     /* width:571px; */
